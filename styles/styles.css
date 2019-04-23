@@ -1,0 +1,458 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #4C0013;
+}
+
+.nav-top {
+  height: 12.5%;
+  width: 100%;
+  background-color: #000000;
+  top: 0;
+  position: absolute;
+  display: flex;
+}
+
+.nav-top div {
+  padding-top: 1.5%;
+  color: white;
+}
+.nav-top a{
+  text-decoration: none;
+  color: white;
+}
+
+.about {
+  margin-left: 5%;
+}
+
+.title {
+  font-size: xx-large;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navLeft, .navRight {
+  flex-grow: 1;
+  display: flex;
+}
+
+.navLeft {
+  margin-left: 1%;
+}
+
+.navRight {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1%;
+}
+
+.profilePicNav a img{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.usernameDiv {
+  margin-left: 22.5px;
+}
+
+.usernameDiv, .line, .logout, .about, .contact, .SignUp, .SignIn {
+  margin-top: 1.75%;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+}
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type="text"], .box input[type="password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid#3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+/*<input id="usernameInput" type="text" name="username" placeholder="Username">
+          <input id="passwordInput" type="password" name="password" placeholder="Password">
+          <input id="SignUpButton" type="submit" name="signUp" value="Sign Up">*/
+
+.box input[type="text"]:focus , .box input[type="password"]:focus {
+  width:280px;
+  border-color: #2ecc71;
+}
+ .box input[type="submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+ }
+.box input[type="submit"]:hover{
+  background: #2ecc71}
+.movies {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  margin-top: 175px;
+  display: flex;
+}
+
+
+.arrows {
+  color: white;
+  font-size: xx-large;
+  padding-top: 8.5%;
+}
+
+.arrows:hover {
+  opacity: 0.6;
+}
+
+.arrLeft {
+  flex-grow: 1;
+}
+
+.movie{
+  flex-grow: 2;
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.movie:hover {
+  background-color: #650000;
+}
+
+.movie img {
+  width: 85%;
+  height: 90%;
+}
+
+.arrRight {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.arrows:hover, .movie img{
+  cursor: pointer;
+}
+
+.descTitle h1 {
+  text-align: center;
+  color: white;
+}
+
+.description {
+  width: 40%;
+  height: 400px;
+  background-color: black;
+  margin: auto;
+}
+
+.description p {
+  color: white;
+  text-align: center;
+}
+
+.btnBook {
+  background-color: black;
+  color: white;
+  border-radius: 44px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: large;
+  margin: auto;
+}
+
+.btnDiv {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.btnBook:hover {
+  background-color: #202020;
+  cursor: pointer;
+}
+
+.btnBook:focus {
+  outline:0;
+}
+
+.btnBook:active {
+  transform: translate(1px,1px);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #650000;
+  border-radius: 10px;
+}
+
+
+.content {
+  background-color: #601323;
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.content p,.content h1 {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.content p {
+  width: 60%;
+  font-size: large;
+  margin: auto;
+}
+
+.profilePic {
+  margin-left: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+}
+
+.profilePic img{
+  width: 210px;
+  height: 225px;
+}
+
+.btnChangePic {
+  width: 210px;
+  height: 20px;
+}
+
+.usernameText {
+  position: absolute;
+  margin-left: 30%;
+}
+
+.usernameText p {
+  font-size: x-large;
+}
+
+.editDetailsDiv {
+  width: 100%;
+  height: 40px;
+  margin: auto;
+}
+
+.editDetailsDiv h1 {
+  padding: 0;
+}
+
+.inputFieldsText {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.inputFieldsText p {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  height: 22px;
+}
+
+.inputFields {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.editProfile {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.passInput {
+  margin-top: 30px;
+}
+
+.repeatPass {
+  margin-top: 30px;
+}
+
+.reservation {
+  display: flex;
+}
+
+.reservation p {
+  width: 75%;
+  margin: 0;
+}
+
+.btnEdit {
+  height: 30px;
+  width: 60px;
+  border-radius: 23px;
+  margin-top: 22.5px;
+  font-weight: bold;
+}
+
+.formDiv {
+  margin: auto;
+  width:300px;
+  text-align: center;
+}
+
+.formDiv input{
+  text-align: center;
+  margin: 5px;
+}
+
+.pushDown {
+  height: 35%;
+}
+
+.btnSubmit {
+  margin-top: 30px;
+}
+
+.movie {
+  width: 12.5%;
+}
+.seats{
+  width: 60%;
+  margin: auto;
+  background: #22040E;
+margin-top: 10%;
+display: flex;
+justify-content: center;
+
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  border: 1px;
+  border-color: white;
+  background: white;
+
+}
+.space{
+width: 40px;
+}
+.selected{
+  width: 40px;
+  height: 40px;
+  border: 1px;
+  border-color: black;
+  background: green;
+}
+.screen{
+
+  width: 50%;
+  border: 1px;
+  border-color: white;
+  background: white;
+   margin:auto;
+   margin-top: 5%;
+text-align: center;
+}
+.reserved{
+  width: 40px;
+  height: 40px;
+  border: 1px;
+  border-color: black;
+  background: red;
+}
+.free{
+  width: 40px;
+  height: 40px;
+  border: 1px;
+  border-color: black;
+  background: white;
+
+}
+.specifyseat{
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+display: flex;
+justify-content: center;
+
+}
+.schedule{
+  width: 40%;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dt {
+  display: flex;
+  flex-direction: column;
+}
+
+.book
+{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.book:hover {background-color: grey}
+
+.book:active {
+  transform: translateY(4px);
+}
+
+.selectedMovie {
+  background-color: #650000;
+}
